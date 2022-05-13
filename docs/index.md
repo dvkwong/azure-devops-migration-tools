@@ -89,7 +89,7 @@ Most of these processors need to be run in order. If you try to migrate work ite
 | Processor                                                                                    | Status  | Target            | Usage                                                                                                      |
 | :------------------------------------------------------------------------------------------- | :------ | :---------------- | ---------------------------------------------------------------------------------------------------------- |
 | [WorkItemMigrationConfig](./Processors/WorkItemMigrationConfig.md)                           | ready   | Work Items        | Migrates either tip or history of work items with Links & Attachments based on a query with field mappings |
-| [TfsTeamSettingsProcessor](./Reference/Processors/TfsTeamSettingsProcessor.md)               | preview | Teams             | Migrates Teams and Team Settings                                                                           |
+| [TfsTeamSettingsProcessorOptions](./Reference/Processors/TfsTeamSettingsProcessor.md)        | preview | Teams             | Migrates Teams and Team Settings                                                                           |
 | [TfsAreaAndIterationProcessor](./Reference/Processors/TfsAreaAndIterationProcessor.md)       | preview | Area & Iterations | Migrates Nodes before run                                                                                  |
 | [WorkItemDelete](./Processors/WorkItemDeleteConfig.md)                                       | ready   | Work Items        | Bulk delete of work items **WARNING DANGEROUS**                                                            |
 | [WorkItemUpdate](./Processors/WorkItemUpdateConfig.md)                                       | ready   | Work Items        | Bulk update of Work Items based on a query and field mappings                                              |
@@ -107,11 +107,11 @@ Most of these processors need to be run in order. If you try to migrate work ite
 
 The new processor configuration is designed to allow the Migration Tools to support diferent Source and targets than just TFS/Azure DevOps, and we moved the Endpoints to the processor to allow both Object Model & REST in different processors.
 
-| Processor                                                                        | Status  | Target         | Usage                                                                                                      |
-| :------------------------------------------------------------------------------- | :------ | :------------- | :--------------------------------------------------------------------------------------------------------- |
-| [WorkItemTrackingProcessor](./Reference/Processors/WorkItemTrackingProcessor.md) | Alpha   | Work Items     | Migrates either tip or history of work items with Links & Attachments based on a query with field mappings |
-| [TfsTeamSettingsProcessor](./Reference/Processors/TfsTeamSettingsProcessor.md)   | preview | Teams          | Migrates Teams and Team Settings                                                                           |
-| [TfsSharedQueryProcessor](./Reference/Processors/TfsTeamSettingsProcessor.md)    | preview | Shared Queries | Moved Shared Queries best effort                                                                           |
+| Processor                                                                             | Status  | Target         | Usage                                                                                                      |
+| :------------------------------------------------------------------------------------ | :------ | :------------- | :--------------------------------------------------------------------------------------------------------- |
+| [WorkItemTrackingProcessor](./Reference/Processors/WorkItemTrackingProcessor.md)      | Alpha   | Work Items     | Migrates either tip or history of work items with Links & Attachments based on a query with field mappings |
+| [TfsTeamSettingsProcessorOptions](./Reference/Processors/TfsTeamSettingsProcessor.md) | preview | Teams          | Migrates Teams and Team Settings                                                                           |
+| [TfsSharedQueryProcessor](./Reference/Processors/TfsTeamSettingsProcessor.md)         | preview | Shared Queries | Moved Shared Queries best effort                                                                           |
 
 ### Field Maps
 
